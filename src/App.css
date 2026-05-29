@@ -1,0 +1,35 @@
+/* Обертка на весь экран */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+/* Ограниченный контейнер */
+.app {
+  width: 650px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-content {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(46, 125, 50, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 700px) {
+  .app {
+    width: 95%;
+    padding: 12px;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+}
